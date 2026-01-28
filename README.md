@@ -23,5 +23,5 @@ Hack devices, breach servers, and don't get caught. Will you become a Legend amo
 
 **Mikołaj Sobczak**  
 - GitHub: [@Teczak-dev](https://github.com/Teczak-dev)
-- Project: [DevBoard](https://github.com/Teczak-dev/DevBoard)
+- Project: [HackLord](https://github.com/Teczak-dev/HackLord)
 
