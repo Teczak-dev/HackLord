@@ -1,21 +1,29 @@
+import styles from './WindowBar.module.css';
 
-
-const WindowBar = ({className, closeWindow, fullscreenWindow}:{className:string, closeWindow: () => void, fullscreenWindow: () => void}) => {
+const WindowBar = (
+    {className, 
+    closeWindow,
+    fullscreenWindow, 
+    windowTitle}:
+    {className:string, 
+    closeWindow: () => void, 
+    fullscreenWindow: () => void, 
+    windowTitle:string}) => {
     return(
-	<div className={className} style={{ background: '#ccc', color: '#111', cursor: 'move' }}>
-	    <div>
-		<button onClick={closeWindow}>
+	<div className={`${styles.bar} ${className}`} style={{ background: '#ccc', color: '#111', cursor: 'move' }}>
+	    <div className={styles.controls}>
+		<button className={styles.close} onClick={closeWindow}>
 		    Zamknij
 		</button>
-		<button>
+		<button className={styles.minimize}>
 		    zminimalizuj
 		</button>
-		<button onClick={fullscreenWindow}>
+		<button className={styles.maximize} onClick={fullscreenWindow}>
 		    pełen ekran
 		</button>
 	    </div>
-	    <div>
-		Tytuł okna
+	    <div className={styles.title}>
+		{windowTitle}
 	    </div>
 	</div>
     );

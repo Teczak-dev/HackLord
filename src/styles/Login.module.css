@@ -1,0 +1,99 @@
+
+
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.loginBox{
+    width: 500px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+.accountsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.accountCard{
+    width: 300px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.accountCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.accountImg{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+.accountName{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.loginBtn{
+    width: 90%;
+    padding: 10px 20px;
+    background-color: #33A1A1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    position: absolute;
+    bottom: 5px;
+}
+.loginBtn:hover {
+    background-color: #287878;
+}
+.createAccountCard{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createAccountBtn{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+.createAccountBtn:hover {
+    background-color: #388E3C;
+}

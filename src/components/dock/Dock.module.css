@@ -1,0 +1,62 @@
+.dock{
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.appContainer{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #111;
+    padding: 8px;
+    position: relative;
+}
+.appContainer:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.appIcon{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+.appIconImage{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+.appName{
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.openIndicator{
+    width: 8px;
+    height: 8px;
+    background-color: #33A1A1;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+}
