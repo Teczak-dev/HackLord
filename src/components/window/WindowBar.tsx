@@ -4,10 +4,12 @@ const WindowBar = (
     {className, 
     closeWindow,
     fullscreenWindow, 
+    minimizeWindow,
     windowTitle}:
     {className:string, 
     closeWindow: () => void, 
     fullscreenWindow: () => void, 
+    minimizeWindow?: () => void,
     windowTitle:string}) => {
     return(
 	<div className={`${styles.bar} ${className}`} style={{ background: '#ccc', color: '#111', cursor: 'move' }}>
@@ -15,7 +17,7 @@ const WindowBar = (
 		<button className={styles.close} onClick={closeWindow}>
 		    Zamknij
 		</button>
-		<button className={styles.minimize}>
+		<button className={styles.minimize} onClick={minimizeWindow}>
 		    zminimalizuj
 		</button>
 		<button className={styles.maximize} onClick={fullscreenWindow}>

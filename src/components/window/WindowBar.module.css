@@ -1,4 +1,5 @@
 .bar{
+    height: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -9,6 +9,7 @@ export interface AppDefinition {
     icon?: string; // emoji lub ścieżka do obrazu
     iconType?: 'emoji' | 'image'; // typ ikony
     width: number; // szerokość okna aplikacji w svw
+    height: number; // wysokość okna aplikacji w svh
 }
 
 export const apps: AppDefinition[] = [
@@ -19,6 +20,7 @@ export const apps: AppDefinition[] = [
 	icon: '/icons/folder.svg',
 	iconType: 'image',
 	width: 50,
+	height: 40,
     },
 ];
 

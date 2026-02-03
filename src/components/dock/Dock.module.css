@@ -53,10 +53,18 @@
     max-width: 100%;
 }
 .openIndicator{
-    width: 8px;
-    height: 8px;
-    background-color: #33A1A1;
+    width: 4px;
+    height: 4px;
+    background-color: #F1F1F1;
     border-radius: 50%;
     position: absolute;
-    bottom: -5px;
+    bottom: -7px;
+    transition: ease-in-out 0.2s;
+}
+
+.minimizedIndicator {
+    width: 8px;
+    height: 3px;
+    background-color: #FFA500; /* pomarańczowy dla minimalizowanych */
+    border-radius: 2px;
 }

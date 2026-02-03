@@ -6,6 +6,7 @@ import Dock from '../components/dock/Dock';
 import WindowManager from '../components/WindowManager';
 import { useApps } from '../shared/hooks/useApps';
 import { getAppById } from '../components/apps/AppRegistry';
+import MenuBar from '../components/menu bar/MenuBar';
 
 const Desktop = () => {
     
@@ -27,10 +28,20 @@ const Desktop = () => {
     }
 
     return (
-	<div style={{backgroundImage: `url(${bg})`, height: '100svh', width: '100svw', backgroundSize: 'cover'}}>
-	    <h1>Desktop Environment, Hello {account?.name}</h1>
-	    <Dock startUpApp={startUpApp}/>
+	<div style={{
+	    backgroundImage: `url(${bg})`, 
+	    height: '100vh', 
+	    width: '100vw', 
+	    backgroundSize: 'cover',
+	    overflow: 'hidden',
+	    position: 'relative'
+	}}>
+	    <MenuBar />
 	    <WindowManager />
+	    <Dock startUpApp={startUpApp}/>
+	    <div style={{padding: '40px 20px'}}>
+		Desktop
+	    </div>
 	</div>
     );
 }

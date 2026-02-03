@@ -1,0 +1,33 @@
+.menuBar{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.leftSection, .rightSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.menuItem{
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+.menuItem:hover{
+    color: #F1F1F1;
+    transform: scale(1.1);
+}
+.time:hover{
+    transform: scale(1);
+}

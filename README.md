@@ -6,6 +6,8 @@
 
 Hack devices, breach servers, and don't get caught. Will you become a Legend among hackers, feared by governments and corporations?
 
+> ⚠️ **Note:**The game is in very early development and may not be playable as expected.
+
 ---
 
 ## 🚀 Features
@@ -14,8 +16,6 @@ Hack devices, breach servers, and don't get caught. Will you become a Legend amo
 - **Terminal Commands**
 
 > ⚠️ **Note:**The game is currently available **only in Polish**. Contributors welcome for English translation!
-
-
 
 ---
 
